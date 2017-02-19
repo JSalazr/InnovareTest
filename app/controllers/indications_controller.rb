@@ -1,0 +1,2 @@
+class IndicationsController < ApplicationController
+end

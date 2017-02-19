@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Innovare</title>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+      <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+      <%= csrf_meta_tags %>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  </head>
+
+  <body class="bodybackground">
+    <div>
+      <nav class= "navbar fixed-top navbar-inverse" id="navbarstyle">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item" id="navimage">
+              <%= image_tag("Cognitio Logo-01.png", height: "100px") %>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"><i class="fa fa-home fa-2x" style="color: #ffffff"></i>  <%= link_to "Inicio", root_path, {id: "navlinktest"} %></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"><i class="fa fa-commenting fa-2x" style="color: #ffffff"></i>  <%= link_to "Mesas Temáticas", tables_path, {id: "navlinktest"} %></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"><i class="fa fa-list fa-2x" style="color: #ffffff"></i>  <%= link_to "Formas de Participación", participations_path, {id: "navlinktest"} %></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"><i class="fa fa-check fa-2x" style="color: #ffffff"></i>  <%= link_to "Indicaciones", indications_path, {id: "navlinktest"} %></a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div style="width: 1500px; margin: auto;">
+      <div style="width: 300px; float: right; padding: 10px">
+        <div>
+          <%= image_tag("logo.png", height: "90px") %>
+          <%= image_tag("Logo 30.png", height: "90px", style: "padding-top: 10px") %>
+        </div>
+        <div style="background-color: rgba(255, 255, 255, 0.9); border-radius: 5px;">
+          <div style="background-color: rgba(0, 38, 89, 1); heigth: 50px; border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 5px; align: center;">
+            <p style="color: #ffffff; text-align: center">
+              Patrocinadores
+            </p>
+          </div>
+            <%= image_tag("randy1.png", width: "280px", style: "float: center") %>
+            <%= image_tag("randy2.png", width: "280px", style: "float: center") %>
+            <%= image_tag("randy3.png", width: "280px", style: "float: center") %>
+        </div>
+        <div style="background-color: rgba(255, 255, 255, 0.9); border-radius: 5px;">
+          <div style="background-color: rgba(0, 38, 89, 1); heigth: 50px; border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 5px; align: center;">
+            <p style="color: #ffffff; text-align: center">
+              Titulo
+            </p>
+          </div>
+          <p style="padding: 5px; ">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div style="background-color: rgba(255, 255, 255, 0.9); border-radius: 5px;">
+          <div style="background-color: rgba(0, 38, 89, 1); heigth: 50px; border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 5px; align: center;">
+            <p style="color: #ffffff; text-align: center">
+              Titulo
+            </p>
+          </div>
+          <p style="padding: 5px;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+      <div style="width:1200px; float: left; padding: 10px">
+        <div style="background-color: rgba(255, 255, 255, 0.9); border-radius: 5px; padding: 10px">
+                  <%= yield %>
+        </div>
+      </div>
+
+    </div>
+  </body>
+
+</html>
