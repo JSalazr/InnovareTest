@@ -1,0 +1,2 @@
+class ExpositionsController < ApplicationController
+end

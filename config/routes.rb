@@ -3,7 +3,8 @@ Rails.application.routes.draw do
     root 'home#index'
 
     resources :tables
-    resources :indications
+    resources :conferencists
     resources :participations
+    resources :expositions
 
 end
