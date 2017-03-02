@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   </head>
 
-  <body class="bodybackground">
+  <body>
     <div>
       <nav class= "navbar fixed-top navbar-inverse" id="navbarstyle">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -28,10 +28,8 @@
             <li class="nav-item">
               <a class="nav-link" ><%= link_to expositions_path do %> <p id="navlinktest"><i class="fa fa-commenting" style="color: #ffffff"></i>  Exposiciones Artisticas</p><%end%></a>
             </li>
-            <li class="nav-item" id="navimage">
-              <div style="background-color: #ffffff; padding: 3px; border-radius: 5px; padding-top: 15px">
+            <li class="nav-item" id="navimage" style="padding-top: 15px">
                 <%= image_tag("Logo 30.png", height: "80px") %>
-              </div>
             </li>
 
           </ul>
@@ -43,7 +41,7 @@
         <div style="margin-bottom: 10px">
           <%= image_tag("Cognitio.png", height: "400px", style: "float: center; display: block; margin: auto") %>
         </div>
-        <div style="background-color: rgba(255, 255, 255, 0.9); border-radius: 5px;">
+        <div style="background-color: rgba(255, 255, 255, 0.9); border-radius: 5px; border: 1px solid rgba(0, 38, 89, 1); margin-bottom: 10px">
           <div style="background-color: rgba(0, 38, 89, 1); heigth: 50px; border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 5px; align: center;">
             <p style="color: #ffffff; text-align: center">
               Titulo
@@ -53,7 +51,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
         </div>
-        <div style="background-color: rgba(255, 255, 255, 0.9); border-radius: 5px;">
+        <div style="background-color: rgba(255, 255, 255, 0.9); border-radius: 5px; border: 1px solid rgba(0, 38, 89, 1)">
           <div style="background-color: rgba(0, 38, 89, 1); heigth: 50px; border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 5px; align: center;">
             <p style="color: #ffffff; text-align: center">
               Titulo
@@ -68,7 +66,7 @@
         <div style="background-color: rgba(0, 38, 89, 1); margin-bottom: 10px; border-radius: 5px;">
           <%= image_tag("logo.png", width: "270px", style: "display: block; margin: auto") %>
         </div>
-        <div style="background-color: rgba(255, 255, 255, 0.9); border-radius: 5px; margin-bottom: 10px">
+        <div style="background-color: rgba(255, 255, 255, 0.9); border-radius: 5px; margin-bottom: 10px; border: 1px solid rgba(0, 38, 89, 1);">
           <div style="background-color: rgba(0, 38, 89, 1); heigth: 50px; border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 5px; align: center; ">
             <p style="color: #ffffff; text-align: center">
               Patrocinadores
@@ -80,7 +78,7 @@
         </div>
       </div>
       <div style="width:850px; float: left; padding: 10px">
-        <div style="background-color: rgba(255, 255, 255, 0.9); border-radius: 5px; padding: 10px">
+        <div style="background-color: rgba(255, 255, 255, 1); border-radius: 5px; padding: 10px">
                   <%= yield %>
         </div>
       </div>
