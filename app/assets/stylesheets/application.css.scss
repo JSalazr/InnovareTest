@@ -36,6 +36,7 @@ nav div ul{
    position:relative;
    left:50%;
    text-align:center;
+   width: 1520px;
 }
 
 #navlinktest{
@@ -52,15 +53,18 @@ nav div ul{
 
 #navimage{
   padding-top: 0px;
+  padding-right: 0px;
 }
 
 #miniprofile{
+  border: 2px solid rgba(0, 38, 89, 1);
   border-left: 15px solid rgba(0, 38, 89, 1);
-  border-right: 2px solid rgba(0, 38, 89, 1);
+  border-right: 15px solid rgba(0, 38, 89, 1);
+  border-radius: 5px;
 }
 
 .bodybackground{
-  width:1900px
+  background-color: #FFFFFF;
 }
 
 blockquote{
@@ -77,13 +81,10 @@ blockquote{
   text-align: justify;
 
   /*Borders - (Optional)*/
+  border: 2px solid rgba(0, 38, 89, 1);
   border-left: 15px solid rgba(0, 38, 89, 1);
-  border-right: 2px solid rgba(0, 38, 89, 1);
-
-  /*Box Shadow - (Optional)*/
-  -moz-box-shadow: 2px 2px 15px #ccc;
-  -webkit-box-shadow: 2px 2px 15px #ccc;
-  box-shadow: 2px 2px 15px #ccc;
+  border-right: 15px solid rgba(0, 38, 89, 1);
+  border-radius: 5px;
 }
 
 blockquote::before{

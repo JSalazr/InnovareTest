@@ -8,15 +8,12 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   </head>
 
-  <body style= "overflow: hidden">
+  <body style= "overflow: hidden" class="bodybackground">
     <div>
       <nav class= "navbar fixed-top navbar-inverse" id="navbarstyle">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item" id="navimage" style="padding-top: 15px">
-                <%= image_tag("Logo 30.png", height: "80px") %>
-            </li>
-            <li class="nav-item">
+            <li class="nav-item" style="padding-left: 20px">
               <a class="nav-link"><%= link_to root_path do %> <p id="navlinktest"><i class="fa fa-home" style="color: #ffffff"></i>  Inicio</p><%end%></a>
             </li>
             <li class="nav-item">
@@ -31,7 +28,9 @@
             <li class="nav-item">
               <a class="nav-link" ><%= link_to expositions_path do %> <p id="navlinktest"><i class="fa fa-commenting" style="color: #ffffff"></i>  Exposiciones Artisticas</p><%end%></a>
             </li>
-
+            <li class="nav-item" id="navimage" style="padding-top: 15px">
+                <%= image_tag("Logo 30.png", height: "70px") %>
+            </li>
 
           </ul>
         </div>
