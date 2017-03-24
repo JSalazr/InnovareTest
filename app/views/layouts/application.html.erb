@@ -2,13 +2,14 @@
 <html>
   <head>
     <title>Innovare</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
       <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
       <%= csrf_meta_tags %>
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   </head>
 
-  <body style= "overflow: hidden" class="bodybackground">
+  <body style= "overflow-x: hidden" class="bodybackground">
     <div>
       <nav class= "navbar fixed-top navbar-inverse" id="navbarstyle">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -29,7 +30,7 @@
               <a class="nav-link" ><%= link_to expositions_path do %> <p id="navlinktest">Exposiciones Artisticas</p><%end%></a>
             </li>
             <li class="nav-item" id="navimage" style="padding-top: 15px">
-                <%= image_tag("Logo 30.png", height: "70px") %>
+                <%= image_tag("Logo 30.png", height: "60px") %>
             </li>
 
           </ul>
@@ -44,21 +45,19 @@
         <div style="background-color: rgba(255, 255, 255, 0.9); border-radius: 10px; border: 2px solid rgba(0, 38, 89, 1); margin-bottom: 10px">
           <div style="background-color: rgba(0, 38, 89, 1); heigth: 50px; border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 5px; align: center;">
             <p style="color: #ffffff; font-family: Book Antiqua; text-align: center; font-size: 18px ">
-              Titulo
+              Fechas Importantes
             </p>
           </div>
           <p style="padding: 5px; font-family: Cambria; font-size: 15px">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-        </div>
-        <div style="background-color: rgba(255, 255, 255, 0.9); border-radius: 10px; border: 2px solid rgba(0, 38, 89, 1)">
-          <div style="background-color: rgba(0, 38, 89, 1); heigth: 50px; border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 5px; align: center;">
-            <p style="color: #ffffff; font-family: Book Antiqua; text-align: center; font-size: 18px">
-              Titulo
-            </p>
-          </div>
-          <p style="padding: 5px; font-family: Cambria; font-size: 15px">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <table class="table table-hover">
+              <tbody>
+                <tr>
+                  <th>
+
+                  </th>
+                </tr>
+              </tbody>
+            </table>
           </p>
         </div>
       </div>
